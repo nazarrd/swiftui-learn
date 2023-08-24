@@ -24,8 +24,9 @@ struct IntroView: View {
                     .font(.title)
                     .fontWeight(.bold)
                 NavigationLink("Tiktok Scroll", destination: BrowseView())
-                    .padding(.vertical, 5.0)
+                    .padding(.vertical, 8.0)
                 NavigationLink("Share Screenshot", destination: ScreenShotView())
+                    .padding(.vertical, 8.0)
             }
         }
     }

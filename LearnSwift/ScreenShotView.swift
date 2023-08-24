@@ -36,11 +36,31 @@ struct ScreenShotView: View {
                             photo: "https://picsum.photos/16"
                         ),
                         images: [
-                            "https://picsum.photos/296/72",
-                            "https://picsum.photos/296/72",
-                            "https://picsum.photos/296/72",
-                            "https://picsum.photos/296/72",
-                            "https://picsum.photos/296/72"
+                            PlaceData(
+                                name: "Bakmi Roxy Cikini",
+                                photo: "https://picsum.photos/296/72",
+                                rating: 5.0
+                            ),
+                            PlaceData(
+                                name: "Bakmi TipTop Pasar Senen",
+                                photo: "https://picsum.photos/296/72",
+                                rating: 4.5
+                            ),
+                            PlaceData(
+                                name: "Bakmi Luwes St. Sudirman",
+                                photo: "https://picsum.photos/296/72",
+                                rating: 5.0
+                            ),
+                            PlaceData(
+                                name: "Bakmi Roxy Sabang",
+                                photo: "https://picsum.photos/296/72",
+                                rating: 4.8
+                            ),
+                            PlaceData(
+                                name: "Bakmi BBT",
+                                photo: "https://picsum.photos/296/72",
+                                rating: 4.0
+                            )
                         ],
                         places: 5,
                         likes: 123,
@@ -178,4 +198,3 @@ struct ScreenShotView_Previews: PreviewProvider {
         ScreenShotView()
     }
 }
-
