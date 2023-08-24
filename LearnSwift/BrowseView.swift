@@ -51,8 +51,8 @@ struct BrowseView: View {
                         Image(systemName: "plus.circle.fill")
                             .resizable()
                             .frame(width: 50, height: 50)
-                            .foregroundColor(.white)
-                            .shadow(radius: 4)
+                            .foregroundColor(.blue)
+                            .padding([.bottom, .trailing], 10.0)
                     }
                     .sheet(isPresented: $isPickerPresented, onDismiss: {
                         if let selectedVideo = selectedVideo {
@@ -98,8 +98,8 @@ struct BrowseView: View {
                 }
             }
         }
-        .background(Color.black)
-        .ignoresSafeArea(.container, edges: .top)
+//        .background(Color.black)
+        .ignoresSafeArea(.container, edges: .vertical)
         .onAppear {
             loadVideoData()
         }
@@ -113,7 +113,7 @@ struct BrowseView: View {
                 }
             }
         }
-        .navigationBarBackButtonHidden(true)
+//        .navigationBarBackButtonHidden(true)
     }
     
     func convertVideoToBase64(from fileURL: URL) -> String? {

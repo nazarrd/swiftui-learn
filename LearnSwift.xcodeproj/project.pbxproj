@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7832BEB32A8C7E0D00EEFA0D /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832BEB22A8C7E0D00EEFA0D /* BrowseView.swift */; };
+		7862D2D92A95AFA4007866E9 /* ScreenShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862D2D82A95AFA4007866E9 /* ScreenShotView.swift */; };
+		78735CFD2A9619DD0019936C /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78735CFC2A9619DD0019936C /* PlaceListView.swift */; };
+		78735D002A9635850019936C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78735CFF2A9635850019936C /* Media.xcassets */; };
 		78ABC1EA2A84983F00D8BCF7 /* LearnSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ABC1E92A84983F00D8BCF7 /* LearnSwiftApp.swift */; };
 		78ABC1EE2A84984000D8BCF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ABC1ED2A84984000D8BCF7 /* Assets.xcassets */; };
 		78ABC1F22A84984000D8BCF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ABC1F12A84984000D8BCF7 /* Preview Assets.xcassets */; };
@@ -35,6 +38,10 @@
 
 /* Begin PBXFileReference section */
 		7832BEB22A8C7E0D00EEFA0D /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		7862D2D82A95AFA4007866E9 /* ScreenShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotView.swift; sourceTree = "<group>"; };
+		7862D2DA2A95BA5E007866E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		78735CFC2A9619DD0019936C /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
+		78735CFF2A9635850019936C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		78ABC1E62A84983F00D8BCF7 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ABC1E92A84983F00D8BCF7 /* LearnSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftApp.swift; sourceTree = "<group>"; };
 		78ABC1ED2A84984000D8BCF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +82,7 @@
 		78ABC1DD2A84983E00D8BCF7 = {
 			isa = PBXGroup;
 			children = (
+				78735CFF2A9635850019936C /* Media.xcassets */,
 				78ABC1E82A84983F00D8BCF7 /* LearnSwift */,
 				78ABC1FA2A84984000D8BCF7 /* LearnSwiftTests */,
 				78ABC2042A84984100D8BCF7 /* LearnSwiftUITests */,
@@ -95,8 +103,11 @@
 		78ABC1E82A84983F00D8BCF7 /* LearnSwift */ = {
 			isa = PBXGroup;
 			children = (
+				7862D2DA2A95BA5E007866E9 /* Info.plist */,
 				78ABC1E92A84983F00D8BCF7 /* LearnSwiftApp.swift */,
 				7832BEB22A8C7E0D00EEFA0D /* BrowseView.swift */,
+				7862D2D82A95AFA4007866E9 /* ScreenShotView.swift */,
+				78735CFC2A9619DD0019936C /* PlaceListView.swift */,
 				78ABC1ED2A84984000D8BCF7 /* Assets.xcassets */,
 				78ABC1EF2A84984000D8BCF7 /* LearnSwift.entitlements */,
 				78ABC1F02A84984000D8BCF7 /* Preview Content */,
@@ -234,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78ABC1F22A84984000D8BCF7 /* Preview Assets.xcassets in Resources */,
+				78735D002A9635850019936C /* Media.xcassets in Resources */,
 				78ABC1EE2A84984000D8BCF7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +273,8 @@
 			files = (
 				7832BEB32A8C7E0D00EEFA0D /* BrowseView.swift in Sources */,
 				78ABC1EA2A84983F00D8BCF7 /* LearnSwiftApp.swift in Sources */,
+				78735CFD2A9619DD0019936C /* PlaceListView.swift in Sources */,
+				7862D2D92A95AFA4007866E9 /* ScreenShotView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +433,8 @@
 				DEVELOPMENT_TEAM = 9TKQY3UJMQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearnSwift/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to detect screenshots for sharing purposes.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -458,6 +474,8 @@
 				DEVELOPMENT_TEAM = 9TKQY3UJMQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearnSwift/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to detect screenshots for sharing purposes.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
